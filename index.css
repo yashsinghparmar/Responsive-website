@@ -210,6 +210,9 @@ p{
 	text-align: center;
 	font-size: 4.5rem;
 }
+.about-content h4{
+	font-size: 2rem;
+}
 .about-content h2{
 	text-align: left;
 	line-height: 1.2;
@@ -565,7 +568,7 @@ p{
 
 	.about-content h3{
 		margin-top: 4rem;
-		
+
 	}
 
 	.services h2{
