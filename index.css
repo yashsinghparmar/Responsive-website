@@ -135,7 +135,9 @@ p{
 .home-img img{
 	width: 35vw;
 	animation:floatImage 4s ease-in-out infinite ;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:50%;
+	box-shadow: 2 0px 0px 2 rgba(0, 0, 0, 0.2), 2 0px 0px 2 rgba(0, 0, 0, 0.19);
+
 }
 
 .home-content h1 span {
@@ -199,7 +201,8 @@ p{
 .about-img img{
 	width: 35vw;
 	animation:floatImage 4s ease-in-out infinite ;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:50%;
+	box-shadow: 2 0px 0px 2 rgba(0, 0, 0, 0.2), 2 0px 0px 2 rgba(0, 0, 0, 0.19);
 }
 
 .heading{
