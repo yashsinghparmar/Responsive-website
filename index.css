@@ -4,7 +4,7 @@
 
 :root {
   --nav-color: Black;
-  --background-color1:#EEEEEE;
+  --background-color1:white;
   --background-color2:#F7F7F7;
   --active-link-color-heading-color:#f7b733;
   --active-link2:#44DA20;
@@ -135,10 +135,10 @@ p{
 .home-img img{
 	width: 35vw;
 	animation:floatImage 4s ease-in-out infinite ;
-	border-radius:50%;
+	border-radius: 50%;
 	box-shadow: 2 0px 0px 2 rgba(0, 0, 0, 0.2), 2 0px 0px 2 rgba(0, 0, 0, 0.19);
 
-}
+	}
 
 .home-content h1 span {
 	color: var(--active-link2);
@@ -201,11 +201,9 @@ p{
 .about-img img{
 	width: 35vw;
 	animation:floatImage 4s ease-in-out infinite ;
-	border-radius: 50%;
 	box-shadow: 2 0px 0px 2 rgba(0, 0, 0, 0.2), 2 0px 0px 2 rgba(0, 0, 0, 0.19);
 
-
-}
+	}
 
 .heading{
 	text-align: center;
@@ -617,6 +615,18 @@ p{
 		margin-top: 2rem;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
