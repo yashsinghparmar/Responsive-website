@@ -67,7 +67,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', 
-{strings:['Frontend Developer', 'Content Writer', 'Figma Designer'],
+{strings:['Frontend Developer', 'Frontend Developer', 'Frontend Developer'],
 typeSpeed:100,
 backSpeed:100,
 backDelay:1000,
@@ -75,12 +75,11 @@ loop:true
 });
 
 
+/*----------------download js-----------------*/
 
-
-
-
-
-
+function downloadFile() {
+  window.open("YashResume.pdf")
+}
 
 
 
