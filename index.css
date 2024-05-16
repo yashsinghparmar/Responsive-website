@@ -202,6 +202,8 @@ p{
 	width: 35vw;
 	animation:floatImage 4s ease-in-out infinite ;
 	box-shadow: 2 0px 0px 2 rgba(0, 0, 0, 0.2), 2 0px 0px 2 rgba(0, 0, 0, 0.19);
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius:50%;
 
 	}
 
