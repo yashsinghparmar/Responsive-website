@@ -101,6 +101,9 @@ p{
 	font-weight: 600;
 	cursor: default;
 }
+.logo img{
+	height: 20px;
+}
 
 .navbar a{
 	font-size: 1.7rem;
