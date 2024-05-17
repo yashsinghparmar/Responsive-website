@@ -83,6 +83,22 @@ function downloadFile() {
 
 
 
+/*----------------popoup js-----------------*/
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function myFunction1() {
+  var popup1 = document.getElementById("myPopup1");
+  popup1.classList.toggle("show");
+}
+
+function myFunction2() {
+  var popup2 = document.getElementById("myPopup2");
+  popup2.classList.toggle("show");
+}
 
 
 
