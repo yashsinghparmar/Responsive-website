@@ -57,7 +57,7 @@ ScrollReveal({
 	delay:200
 });
 
-ScrollReveal().reveal('.home-content, .heading', .home-content h1, .about-img', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .heading, .home-content h1, .about-img', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-box, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
