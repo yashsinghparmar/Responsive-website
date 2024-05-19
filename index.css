@@ -550,7 +550,7 @@ color: var(--text-color2);
 /*-----------------responsive css------------------*/
 
 
-@media screen and (min-width:1301px){
+@media screen and (min-width:1281px){
 	.contact{
 		min-height: auto;
 	}
@@ -565,7 +565,7 @@ color: var(--text-color2);
 	}
 }
 
-@media (max-width:1300px ){
+@media (max-width:1280px ){
 	html{
 		font-size: 55%;	
 	}
@@ -597,7 +597,7 @@ color: var(--text-color2);
 }
 
 
-@media (max-width:991px ){
+@media (max-width:1024px ){
 	
 	.header{
 		padding: 2rem 3%;
@@ -716,7 +716,7 @@ color: var(--text-color2);
 	}
 }
 
-@media (max-width:450px ){
+@media (max-width:480px ){
 	html{
 		font-size: 50%;
 	}
@@ -746,22 +746,4 @@ color: var(--text-color2);
 		margin-top: 2rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
