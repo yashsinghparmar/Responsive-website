@@ -57,8 +57,8 @@ ScrollReveal({
 	delay:200
 });
 
-ScrollReveal().reveal('.home-content, .heading, .home-content h1, .about-img, .home-content p', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-box, .services-container, .portfolio-box, .contact form,  .about-content', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content, .heading, .home-content h1, .about-img, .home-content p, .skill-heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-box, .services-container, .portfolio-box, .contact form,  .about-content, .skills', { origin: 'bottom' });
 
 /*----------------multiple text js-----------------*/
 
