@@ -8,6 +8,7 @@
 	<script src="https://kit.fontawesome.com/ae3250ed4a.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<style>
 		.home, .services{
 			background:linear-gradient(rgba(277, 277, 277,0.9), rgba(277, 277, 277, 0.9)), url(homeimg.jpg);
@@ -35,7 +36,7 @@
 <header class="header">
 
 	<a href="#home" class="logo"><img src="logo.png">  Yash <span style="border-bottom: 3px solid orange;">Parmar</span></a>
-	<i class="fa-solid fa-bars-staggered fa-beat-fade" id="menu-icon"></i>
+	<i class="fa-solid fa-bars-staggered fa-bounce" id="menu-icon"></i>
 
 	<nav class="navbar">
 		<a href="#home" class="active"><i class="fa-solid fa-house-user"></i>  Home</a>
@@ -60,11 +61,12 @@
 		<h1>Yash <span>Parmar</span></h1>
 		<h3>And I'm a <span class="multiple-text"></span></h3>
 		<p>Having a total of 2-year Experience, 1 year of Progressive Experience in Operation Executive and 1 year of Experience in Freelancing, Energetic and easily adapt any situations. Navigates high-stress situations and achieve goals on time. Skills in establishing strong channels of Communication Between Team Members. </p>
-	<div class="social-media">
+		<div class="social-media">
 		<a href="https://www.linkedin.com/in/yash-pratap-singh-parmar-67b7bb1b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
 		<a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fa-solid fa-envelope"></i></a>
 		<a href="https://github.com/yashsinghparmar"><i class="fa-brands fa-square-github"></i></a>
 	</div>
+	
 	<a class="btn" onclick = "downloadFile()"> <i class="fa-solid fa-download fa-bounce"></i> Download CV</a>
 </div>
 <div class="home-img">
@@ -116,13 +118,7 @@
 					<li>Familiar in working with Power BI and Ms-Office.</li>
 				</ul>
 				</p>
-				<div class="popup" onclick="myFunction()">Read More  &nbsp<i class="fa-solid fa-arrow-right fa-fade" id="fade-icon"></i>
- 				 <span class="popuptext" id="myPopup">For more details visit on! <br>
-					<a href="https://www.linkedin.com/in/yash-pratap-singh-parmar-67b7bb1b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-					<a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fa-solid fa-envelope"></i></a>
-					<a href="https://github.com/yashsinghparmar"><i class="fa-brands fa-square-github"></i></a>
-				</span>
-
+				<div class="popup" onclick="popupToggle()">Read More  &nbsp<i class="fa-solid fa-arrow-right fa-fade" id="fade-icon"></i>
 					</div>
 			</div>
 			<div class="services-box">
@@ -136,13 +132,7 @@
 					<li>Working in a Bakery Shop Website Project as a Main Designer.</li>
 				</ul>
 				</p>
-				<div class="popup popup1" onclick="myFunction1()">Read More  &nbsp<i class="fa-solid fa-arrow-right fa-fade" id="fade-icon"></i>
- 				 <span class="popuptext" id="myPopup1">For more details visit on! <br>
-					<a href="https://www.linkedin.com/in/yash-pratap-singh-parmar-67b7bb1b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-					<a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fa-solid fa-envelope"></i></a>
-					<a href="https://github.com/yashsinghparmar"><i class="fa-brands fa-square-github"></i></a>
-				</span>
-
+				<div class="popup" onclick="popupToggle()">Read More  &nbsp<i class="fa-solid fa-arrow-right fa-fade" id="fade-icon"></i>
 					</div>
 			</div>
 		</div>
@@ -286,13 +276,7 @@
 			<input type="text" placeholder="Subject">
 		</div>
 		<textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-		<div href="#contact" class="popup popup2 btn" onclick="myFunction2()" style="color: white;"><i class="fa-solid fa-upload fa-bounce"></i>  Submit
- 				 <span class="popuptext" id="myPopup2">Right now Contact Service is Unavailable, You can use Social Media for contact me.<br>
- 				 	<a href="https://www.linkedin.com/in/yash-pratap-singh-parmar-67b7bb1b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-					<a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fa-solid fa-envelope"></i></a>
-					<a href="https://github.com/yashsinghparmar"><i class="fa-brands fa-square-github"></i></a>
-				</span>
-
+		<div href="#contact" class="btn" onclick="popupToggle1()" style="color: white;"><i class="fa-solid fa-upload fa-bounce"></i>  Submit
 					</div>
 	</form>
 	
@@ -308,10 +292,10 @@
 		<a href="https://github.com/yashsinghparmar"><i class="fa-brands fa-square-github"></i></a>
 	</div>
 	<div class="footer-text">
-		<p>Copyright &copy; 2023 by <span style="border-bottom: 2px solid orange;"><a href="#" onclick = "downloadFile()"></a>Yash Parmar</span> | All Right Reserved</p>
+		<p>Copyright &copy; 2023 by <span style="border-bottom: 2px solid orange;" onclick = "downloadFile()">Yash Parmar</span> | All Right Reserved</p>
 	</div>
 	<div class="footer-icontop">
-		<a href="#home"> <i class="fa-solid fa-circle-arrow-up fa-shake"></i></a>
+		<a href="#home"> <i class="fa-solid fa-circle-arrow-up fa-bounce"></i></a>
 	</div>
 </footer>
 
