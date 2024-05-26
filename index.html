@@ -265,18 +265,18 @@
 	<h2 class="heading">
 		<i class="fa-solid fa-address-book"></i>  Contact <span style="border-bottom: 4px solid orange;">Me</span>
 	</h2>
-	<form action="https://api.web3forms.com/submit" method="POST">
-
-    <input type="hidden" name="access_key" value="a2a941ff-29f4-4f13-921a-b8242f53ea17">
-
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
-    <button type="submit">Submit Form</button>
-
-</form>
+	<form  action="https://api.web3forms.com/submit" method="POST">
+		<div class="input-box">
+			<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+			<input type="text" placeholder="Full Name" name="name" required>
+			<input type="email" placeholder="Email Address" name="email" required>
+			<textarea cols="30" rows="10" placeholder="Your Message" name="message" required>
+			</textarea>
+			<input type="hidden" name="redirect" value="https://web3forms.com/success">
+			<button href="#contact" type="submit" class="btn" style="color: white; cursor: pointer;"><i class="fa-solid fa-upload fa-bounce"></i>  Submit
+			</button>
+		</div>
+	</form>
 	
 </section>
 
