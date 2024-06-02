@@ -87,11 +87,7 @@ function popupToggle() {
   title: "Read more details by visiting Social Media ",
   icon: "",
   html: `
-    <div class="social-media">
-        <a href="https://www.linkedin.com/in/yash-pratap-singh-parmar-67b7bb1b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/yashsinghparmar"><i class="fa-brands fa-square-github"></i></a>
-    </div>
+    
   `,
   showCloseButton: true,
   showCancelButton: true,
