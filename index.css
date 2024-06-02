@@ -682,27 +682,10 @@ color: var(--text-color2);
 }
 
 
-@media (max-width:921px ){
+@media (max-width:821px ){
 	
 	#menu-icon{
 		display: block;
-	}
-	
-	.Fixed-icon{
-		position: fixed;
-		top: 92%;
-		width: 100%;
-		display: flex;
-		justify-content:center;
-		align-items: center;
-		background-color: transparent;
-		z-index: 1;
-		flex-direction: row;
-		
-	}
-	.Fixed-icon > div {
-		border-radius: 10px;
-		margin: .5rem;
 	}
 
 	.navbar{
