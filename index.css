@@ -5,13 +5,12 @@
 :root {
   --nav-color: #183153;
   --background-color1:white;
-  --background-color2:#F7F7F7;
-  --active-link-color-heading-color:#f7b733;
-  --active-link2:#44DA20;
-  --Button-color:#183153;
-  --button-hover-color:#3384a6;
-  --text-color1:black;
-  --text-color2:white;
+  --link-color:orange;
+  --active-link2:hsl(175, 57%, 33%);
+  --Button-color:#234370;
+  --button-hover-color:#2e6f8b;
+  --text-black:black;
+  --text-white:white;
 }
 
 *{
@@ -19,7 +18,7 @@
 	padding: 0;
 	font-family: 'poppons', sans-serif;
 	box-sizing: border-box;
-	bordor:none;
+	border:none;
 	outline: none;
 	scroll-behavior: smooth;
 	text-decoration: none;
@@ -34,7 +33,7 @@ body{
 	background-color: var(--background-color1);
 }
 span{
-	color:#183153;
+	color:var(--link-color);
 }
 section{ 
 	min-height: 100vh;
@@ -71,18 +70,18 @@ p{
 
 .btn:hover{
 	box-shadow: 0 0 1rem var(--Button-color);
-	transform: scale(0.9);
+
 }
 
 #fade-icon{
 	font-size:2rem;
-	color: var(--Button-color);
+	color:orange;
 }
 
 /*-----------------popups css------------------*/
 
 .popup {
-	color: var(--active-link-color-heading-color);
+	color: var(--link-color);
 	font-size: 1.5rem;
 	font-weight: 700;
   position: relative;
@@ -99,7 +98,7 @@ p{
 
 .popup{
 	font-size: 1.5rem;
-	color: var(--active-link-color-heading-color);
+	color: var(--active-link2);
 }
   
 
@@ -120,12 +119,11 @@ p{
 }
 
 .header.sticky{
-	border-bottom: .1rem solid rgba(0, 0, 0, .2);
+	border-bottom: .5rem solid rgba(0, 0, 0, .2);
 }
 
 .logo{
 	font-size: 2.5rem;
-	color: var(--text-color2);
 	font-weight: 600;
 	cursor: default;
 }
@@ -135,7 +133,7 @@ p{
 
 .navbar a{
 	font-size: 1.7rem;
-	color: var(--text-color2);
+	color: var(--text-white);
 	margin-left: 4rem;
 	transition: all 0.3s ease;
 
@@ -143,8 +141,8 @@ p{
 
 .navbar a:hover,
 .navbar a.active{
-	color: var(--active-link-color-heading-color);
-	border-bottom: 2px solid var(--active-link-color-heading-color);
+	color: var(--link-color);
+	border-bottom: 2px solid var(--link-color);
 }
 
 #menu-icon{
@@ -405,7 +403,7 @@ color: var(--text-color2);
   left: 0;
   width: 100%;
   height: 100%;
-  background: conic-gradient(var(--active-link-color-heading-color) calc(var(--percentage) * 1%), var(--secondary) 0);
+  background: conic-gradient(var(--nav-color) calc(var(--percentage) * 1%), var(--secondary) 0);
   mask: radial-gradient(white 55%, transparent 0);
   mask-mode: alpha;
   -webkit-mask: radial-gradient(#0000 55%, #000 0);
@@ -483,12 +481,14 @@ color: var(--text-color2);
 
 }
 .portfolio-layers h4{
-	font-size: 3rem;	
+	font-size: 3rem;
+	color: var(--text-white);	
 }
 
 .portfolio-layers p{
 	font-size: 1.6rem;
 	margin: .3rem 0 1rem;
+	color: var(--text-white);
 }
 
 .portfolio-layers a{
@@ -497,10 +497,10 @@ color: var(--text-color2);
 	align-items: center;
 	width: 5rem;
 	height: 5rem;
-	background-color: var(--Button-color);
+	background-color: var(--link-color);
 	border-radius: 50%;
 	border:.2rem solid var(--Button-color);
-	color:var(--text-color2);
+	color:var(--nav-color);
 	font-size: 1.6rem;
 	transition: all .3s ease;
 }
@@ -535,8 +535,8 @@ color: var(--text-color2);
 	width:100% ;
 	padding: 1.5rem;
 	font-size: 1.5rem;
-	color: var(--text-color);
-	background-color: var(--text-color2);
+	color: var(--text-black);
+	background-color: var(--text-white);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin: .7rem 0;
 	border: none;
@@ -562,7 +562,7 @@ color: var(--text-color2);
 	align-items: center;
 	flex-wrap: wrap;
 	background: var(--nav-color);
-	color: var(--text-color2);
+	color: var(--text-white);
 }
 
 
@@ -575,7 +575,7 @@ color: var(--text-color2);
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--text-color1);
+	background: var(--text-black);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 50%;
 	transition: all .5s ease;
