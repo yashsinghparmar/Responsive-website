@@ -34,7 +34,7 @@ body{
 	background-color: var(--background-color1);
 }
 span{
-	color: var(--active-link-color-heading-color);
+	color:#183153;
 }
 section{ 
 	min-height: 100vh;
