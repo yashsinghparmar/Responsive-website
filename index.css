@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --nav-color:radial-gradient(circle, rgba(42,89,152,1) 0%, rgba(21,91,185,1) 30%, rgba(101,140,192,1) 60%, rgba(24,49,83,1) 100%);
+  --nav-color:#1a3254;
   --background-color1:white;
   --link-color:orange;
   --active-link2:hsl(175, 57%, 33%);
